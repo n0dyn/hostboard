@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Single host</p>
+      <h1>Hostboard</h1>
+      <p class="lede">CPU, memory, and disk on this machine. A disk reading at or above 80% raises an alert.</p>
+    </header>
+    <p id="alert" class="alert" hidden></p>
+    <section class="gauges" aria-label="Current metrics">
+      <article><h2>CPU</h2><p id="cpu" class="value">–</p></article>
+      <article><h2>Memory</h2><p id="mem" class="value">–</p></article>
+      <article><h2>Disk</h2><p id="disk" class="value">–</p></article>
+    </section>
+    <section>
+      <h2>Recent samples</h2>
+      <ol id="history"></ol>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

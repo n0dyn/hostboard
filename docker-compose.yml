@@ -1,0 +1,12 @@
+services:
+  hostboard:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      HOSTBOARD_DB: /data/hostboard.sqlite
+    volumes:
+      - hostboard-data:/data
+
+volumes:
+  hostboard-data:

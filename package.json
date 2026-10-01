@@ -1,0 +1,14 @@
+{
+  "name": "hostboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Single-host CPU, memory, and disk dashboard with a disk threshold alert.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
